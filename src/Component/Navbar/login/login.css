@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+.auth-form-container {
+    /* border: 1px solid red; */
+    margin-top: 50px;
+    width: 40%;
+    margin-left: 380px;
+}
+
+h2 {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.auth-form-container,
+.login-form,
+.register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: left;
+    padding: 0.25rem 0;
+}
+
+input {
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+button {
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #7439db;
+}
+
+.submit {
+    font-weight: bold;
+}
+
+.link-btn {
+    background: none;
+    color: black;
+    text-decoration: underline;
+}

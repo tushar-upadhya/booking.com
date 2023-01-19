@@ -1,0 +1,59 @@
+.grid {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    padding: 20px;
+    border: 1px solid #888;
+    background: #ced89e;
+    margin: 30px auto;
+    width: 60%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+}
+
+.card:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.Btn {
+    border-radius: 5px;
+    border-style: none;
+    padding: 10px;
+    width: 8rem;
+    margin-left: 620%;
+    background-color: #b6e2a1;
+    cursor: pointer;
+    font-weight: 650;
+
+}
+
+.Btn:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.first {
+    /* border: 1px solid red; */
+    line-height: 2;
+    width: 200%;
+    text-align: center;
+}
+.second {
+    /* border: 1px solid red; */
+    margin-left: 150px;
+    line-height: 2;
+    width: 120%;
+    text-align: center;
+}
+
+.third {
+    /* border: 1px solid red; */
+    margin-left: 250px;
+    line-height: 2;
+    width: 120%;
+    text-align: center;
+}
