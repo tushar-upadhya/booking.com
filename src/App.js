@@ -8,6 +8,7 @@ import Login from "./Component/Navbar/login/Login";
 import Navbar from "./Component/Navbar/Navbar";
 import Register from "./Component/Navbar/register/Register";
 
+
 function App() {
     return (
         <BrowserRouter>
