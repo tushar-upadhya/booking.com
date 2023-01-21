@@ -9,6 +9,7 @@ import Navbar from "./Component/Navbar/Navbar";
 import Register from "./Component/Navbar/register/Register";
 import Users from "./Data/UserData";
 
+
 function App() {
     console.log(Users);
     return (
