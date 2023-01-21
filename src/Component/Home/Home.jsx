@@ -9,6 +9,9 @@ import Design from "./Design/Design";
 
 const Home = () => {
     const [currentForm, setCurrentForm] = useState("login");
+    const [isUserLoggedIn, setIsUserLoggedIn] = useState(false);
+
+    const [loggedInUserData, setLoggedInUserData] = useState({});
 
     const toggleForm = (formName) => {
         setCurrentForm(formName);
@@ -17,7 +20,12 @@ const Home = () => {
     return (
         <div>
             {currentForm === "login" ? (
-                <Login onFormSwitch={toggleForm} />
+                <Login
+                    onFormSwitch={toggleForm}
+                    isUserLoggedIn={isUserLoggedIn}
+                    setIsUserLoggedIn={setIsUserLoggedIn}
+                    setLoggedInUserData = {setIsUserLoggedIn}
+                />
             ) : (
                 <Register onFormSwitch={toggleForm} />
             )}

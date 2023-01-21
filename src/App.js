@@ -7,8 +7,10 @@ import Hotel from "./Component/Hotel/Hotel";
 import Login from "./Component/Navbar/login/Login";
 import Navbar from "./Component/Navbar/Navbar";
 import Register from "./Component/Navbar/register/Register";
+import Users from "./Data/UserData";
 
 function App() {
+    console.log(Users);
     return (
         <BrowserRouter>
             <Navbar />
@@ -21,7 +23,7 @@ function App() {
                 <Route path="/flight" element={<Flight />}></Route>
                 {/* <Route path="/login" element={<Login />}></Route> */}
             </Routes>
-            {/* <Footer /> */}
+            <Footer />
         </BrowserRouter>
     );
 }

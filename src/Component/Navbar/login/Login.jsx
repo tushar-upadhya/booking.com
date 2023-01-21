@@ -8,6 +8,11 @@ const Login = (props) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(email);
+        console.log(pass); 
+        
+        //todo => compare user data and verfy  users valid or not
+        //    if user is valid logged succesfully and redirect according
+        //   if is invalid message
     };
 
     return (

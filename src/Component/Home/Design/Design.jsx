@@ -13,7 +13,7 @@ const Design = () => {
                 <div className="featuredTitles">
                     <h1>Spiti Valley</h1>
                     <h2>123 properties</h2>
-                </div>g
+                </div>
             </div>
 
             <div className="featuredItem">
