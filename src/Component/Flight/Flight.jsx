@@ -32,18 +32,20 @@ const Flight = () => {
         <div>
             <div className="grid">
                 <div>
-                    {myData.map((post) => {
+                    {myData.map((post, index) => {
                         const {
                             from,
                             to,
+                            departure,
                             departureTime,
                             airlineName,
                             returnTime,
+                            returnDate,
                             via,
                             price,
                         } = post;
                         return (
-                            <div className="card" key={departureTime}>
+                            <div className="card" key={index}>
                                 <div className="first">
                                     <p>FROM</p>
                                     <h3>{from}</h3>
@@ -56,11 +58,12 @@ const Flight = () => {
                                 </div>
 
                                 <div className="second">
-                                    <p>DEPARTURE</p>
-                                    <h3>{departureTime}</h3>
+                                    <p>DEPARTURE Time</p>
+                                    <h3>{departure?.departureTime}</h3>
+                                    {/* <h3>{departure?.departureDate}</h3> */}
 
-                                    <p>Rating</p>
-                                    <h3>{returnTime}</h3>
+                                    <p>DEPARTURE Date</p>
+                                    <h3>{departure?.departureDate}</h3>
                                 </div>
 
                                 <div className="third">
