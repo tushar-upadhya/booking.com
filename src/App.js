@@ -9,7 +9,6 @@ import Navbar from "./Component/Navbar/Navbar";
 import Register from "./Component/Navbar/register/Register";
 import Users from "./Data/UserData";
 
-
 function App() {
     console.log(Users);
     return (
@@ -24,7 +23,7 @@ function App() {
                 <Route path="/flight" element={<Flight />}></Route>
                 {/* <Route path="/login" element={<Login />}></Route> */}
             </Routes>
-            <Footer />
+            {/* <Footer /> */}
         </BrowserRouter>
     );
 }
