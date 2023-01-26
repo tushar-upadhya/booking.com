@@ -7,7 +7,8 @@
     padding: 20px;
     border: 1px solid #888;
     background: #ced89e;
-    margin: 30px auto;
+    margin-left: 20%;
+    gap: 50px;
     width: 60%;
     border-radius: 10px;
     border: 1px solid #ccc;
@@ -29,7 +30,6 @@
     background-color: #b6e2a1;
     cursor: pointer;
     font-weight: 650;
-
 }
 
 .Btn:hover {
@@ -44,9 +44,9 @@
 }
 .second {
     /* border: 1px solid red; */
-    margin-left: 150px;
+    margin-left: 120px;
     line-height: 2;
-    width: 120%;
+    width: 200%;
     text-align: center;
 }
 

@@ -4,6 +4,9 @@ import Footer from "../Footer/Footer";
 import Login from "../Navbar/login/Login";
 import Register from "../Navbar/register/Register";
 import Design from "./Design/Design";
+import Mail from "../mail/Mail";
+import Property from "./property/Property";
+import SearchItem from "../searchItem/SearchItem";
 // import { Navbar } from "react-bootstrap";
 // import Header from "../header/Header";
 
@@ -19,19 +22,23 @@ const Home = () => {
 
     return (
         <div>
-            {currentForm === "login" ? (
+            {/* {currentForm === "login" ? (
                 <Login
                     onFormSwitch={toggleForm}
                     isUserLoggedIn={isUserLoggedIn}
                     setIsUserLoggedIn={setIsUserLoggedIn}
-                    setLoggedInUserData = {setIsUserLoggedIn}
+                    setLoggedInUserData={setIsUserLoggedIn}
                 />
             ) : (
                 <Register onFormSwitch={toggleForm} />
-            )}
+            )} */}
+
             <div className="homeContainer">
                 <Design />
             </div>
+            <Property />
+            {/* <SearchItem /> */}
+            <Mail />
             <Footer />
         </div>
     );

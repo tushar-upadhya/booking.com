@@ -39,8 +39,10 @@ const Flight = () => {
                             departure,
                             departureTime,
                             airlineName,
-                            returnTime,
-                            returnDate,
+                            return: a,
+
+                            // returnTime,
+                            // returnDate,
                             via,
                             price,
                         } = post;
@@ -59,11 +61,15 @@ const Flight = () => {
 
                                 <div className="second">
                                     <p>DEPARTURE Time</p>
-                                    <h3>{departure?.departureTime}</h3>
-                                    {/* <h3>{departure?.departureDate}</h3> */}
+                                    <h3>
+                                        {departure?.departureTime}|
+                                        {departure?.departureDate}
+                                    </h3>
 
-                                    <p>DEPARTURE Date</p>
-                                    <h3>{departure?.departureDate}</h3>
+                                    <p>Return</p>
+                                    <h3>
+                                        {a?.returnTime} | {a?.returnDate}
+                                    </h3>
                                 </div>
 
                                 <div className="third">

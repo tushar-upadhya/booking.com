@@ -4,17 +4,19 @@ import Footer from "./Component/Footer/Footer";
 import Header from "./Component/header/Header";
 import Home from "./Component/Home/Home";
 import Hotel from "./Component/Hotel/Hotel";
+import Mail from "./Component/mail/Mail";
 import Login from "./Component/Navbar/login/Login";
 import Navbar from "./Component/Navbar/Navbar";
 import Register from "./Component/Navbar/register/Register";
-import Users from "./Data/UserData";
+// import Users from "./Data/UserData";
 
 function App() {
-    console.log(Users);
+    // console.log(Users);
     return (
         <BrowserRouter>
             <Navbar />
             <Header />
+            {/* <Mail /> */}
             <Routes>
                 <Route path="/login" element={<Login />}></Route>
                 <Route path="/register" element={<Register />}></Route>

@@ -17,6 +17,7 @@ import { format } from "date-fns";
 
 const Header = ({ type }) => {
     const [destination, setDestination] = useState("");
+    const navigate = useNavigate();
     const [openDate, setOpenDate] = useState(false);
     const [date, setDate] = useState([
         {
@@ -25,14 +26,13 @@ const Header = ({ type }) => {
             key: "selection",
         },
     ]);
+
     const [openOptions, setOpenOptions] = useState(false);
     const [options, setOptions] = useState({
         adult: 1,
         children: 0,
         room: 1,
     });
-
-    const navigate = useNavigate();
 
     const handleOption = (name, operation) => {
         setOptions((prev) => {
@@ -47,8 +47,13 @@ const Header = ({ type }) => {
     const hotelSearch = () => {
         navigate("/hotel", { state: { destination, date, options } });
     };
+
     const flightSearch = () => {
         navigate("/flight", { state: { destination, date, options } });
+    };
+
+    const handleSearch = () => {
+        navigate("/SearchItem", { state: { destination, date, options } });
     };
 
     return (
@@ -248,14 +253,14 @@ const Header = ({ type }) => {
                                     </div>
                                 )}
                             </div>
-                            {/* <div className="headerSearchItem">
+                            <div className="headerSearchItem">
                                 <button
                                     className="headerBtn"
                                     onClick={handleSearch}
                                 >
                                     Search
                                 </button>
-                            </div> */}
+                            </div>
                         </div>
                     </>
                 )}
